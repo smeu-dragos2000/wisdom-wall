@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Kaushan Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+    --brick-wall: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23803f3f' fill-opacity='0.78'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    --brick-color: #c76b6b;
+    --font-size: 22px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: var(--font-size);
+}
+
+body {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--brick-color);
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    background-image: var(--brick-wall);
+}
+
+.quote-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 900px;
+    min-width: 500px;
+    min-height: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.856);
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, 0.5);
+}
+
+#quote-text {
+    font-size: 1.2rem;
+}
+
+
+#author {
+    font-size: 1.6rem;
+}
+
+
+/* .long-quote {
+    font-size: 2rem;
+} */
+
+
+
+.quote-author {
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+
+
+/* --- Buttons --- */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    outline: none;
+    padding: 0.5rem 1.6rem;
+    box-shadow: 0 6px rgba(121, 121, 121, 0.65);
+    color: white;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translate(0, 2px);
+    box-shadow: 0 4px rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+#new-quote:hover {
+ color: var(--brick-color);
+}
+
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+p {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Media Query: Tablet or Smaller */
+
+@media screen and (max-width: 650px) {
+    :root {
+        --font-size: 18px;
+    }
+    .quote-container {
+        width: 90%;
+        height: auto;
+        min-width: auto;
+    }
+
+    p {
+        left: 30px;
+        bottom: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
