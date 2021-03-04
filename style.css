@@ -131,7 +131,7 @@ p {
 
 /* Media Query: Tablet or Smaller */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     :root {
         --font-size: 18px;
     }
